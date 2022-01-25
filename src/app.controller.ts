@@ -14,6 +14,6 @@ export class AppController {
 
   @Get('protected')
   getHello(@Request() req): string {
-    return 'Hello World!';
+    return req.user;
   }
 }
